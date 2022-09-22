@@ -1,0 +1,109 @@
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 77px calc(var(--size) * 32)
+  position: absolute
+
+  .nav-brand
+    font-weight: 800
+    font-size: 20px
+    line-height: 24px
+    color: #000000
+    background: #CDFFF3
+    border-radius: 6px
+    padding: 10px 14px
+
+  nav
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 48px
+
+    .responsive
+      display: flex
+      transform: translate(-360px, -360px)
+      transition: all 0.4s ease-in-out
+      width: 0px!important
+
+  a
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    color: rgba(255, 255, 255, 0.6)
+    text-decoration: none
+    transition: color 0.1s ease-in-out
+    &:hover
+      color: #ffffff
+
+  .button
+    background: #2BA386
+    border-radius: 6px
+    border: none
+    color: #FFFFFF
+    padding: 10px 32px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 10px
+    font-size: 16px
+    line-height: 28px
+    font-weight: 600
+    cursor: pointer
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out
+    &:hover
+      background: #CDFFF3
+      color: #000000
+
+.mobile-btn
+  display: none!important
+  span
+    display: none
+    color: #FFFFFF
+    .css-i4bv87-MuiSvgIcon-root
+      font-size: 32px
+  span[data-opened="true"]
+    display: block!important
+  span[data-closed="false"]
+    display: block!important
+
+.responsive[data-opened="true"]
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 260px!important
+  position: absolute
+  top: 0
+  left: 0
+  background-color: #22232d
+  z-index: 100
+  border-bottom-right-radius: 50%
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.3)
+  transition: 0.4s all ease-in-out
+  transform: translate(0px, 0px)
+  a
+    display: flex
+    padding: 24px
+    color: #FFFFFF
+
+@media screen and (max-width: 980px)
+  header
+    padding: 70px 0
+@media screen and (max-width: 720px)
+  header
+    padding: 70px 40px
+  a
+    display: none
+  a.nav-brand
+    display: flex
+  .button
+    padding: 10px!important
+    position: absolute
+    right: 90px
+    z-index: 0
+    span
+      display: none
+  .mobile-btn
+    display: flex!important
