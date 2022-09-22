@@ -11,7 +11,6 @@ export const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   return (
-    <div className="container">
       <header>
         <nav>
           <Link to="/" className="nav-brand">
@@ -43,6 +42,5 @@ export const Header = () => {
           </span>
         </div>
       </header>
-    </div>
   );
 };

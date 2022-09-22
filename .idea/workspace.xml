@@ -26,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/conta/Desktop/nylestroke-portfolio",
+    "last_opened_file_path": "C:/Users/conta/Desktop/nylestroke-portfolio/src/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -36,6 +36,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\conta\Desktop\nylestroke-portfolio\src\assets\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\conta\Desktop\nylestroke-portfolio\src\assets\img" />
       <recent name="C:\Users\conta\Desktop\nylestroke-portfolio\src\assets" />
@@ -51,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663861967999</updated>
-      <workItem from="1663861969186" duration="12031000" />
+      <workItem from="1663861969186" duration="16122000" />
     </task>
     <servers />
   </component>
