@@ -1,6 +1,6 @@
 {
 	"name": "nylestroke-portfolio",
-	"homepage": "https://nylestroke.github.io/personal-portfolio",
+	"homepage": ".",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
