@@ -1,13 +1,16 @@
 .skills
 	display: flex
 	flex-direction: column
+	align-items: center
 	justify-content: center
-	margin-top: 240px
+	margin-top: 120px
 	gap: calc(var(--size) * 10)
 	
 	.skills__start
 		display: flex
 		flex-direction: column
+		justify-content: center
+		align-items: center
 		gap: calc(var(--size) * 5)
 		.skills__title
 			font-weight: 700
@@ -36,13 +39,14 @@
 		align-items: center
 		flex-wrap: wrap
 		width: 100%
-		gap: calc(var(--size) * 5)
+		gap: 42px
 		.skills__element
 			display: flex
 			flex-direction: column
 			justify-content: center
 			align-items: center
 			.skills__body
+				margin-top: 30px
 				display: flex
 				flex-direction: column
 				justify-content: center
@@ -60,3 +64,13 @@
 					color: rgba(255, 255, 255, 0.6)
 					max-width: 320px
 					width: 100%
+
+@media screen and (max-width: 1020px)
+	.skills
+		margin-top: 160px
+
+		.skills__start
+			margin-bottom: 40px
+
+	.skills__container
+		margin-bottom: 80px
