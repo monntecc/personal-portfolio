@@ -1,0 +1,62 @@
+.skills
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-top: 240px
+	gap: calc(var(--size) * 10)
+	
+	.skills__start
+		display: flex
+		flex-direction: column
+		gap: calc(var(--size) * 5)
+		.skills__title
+			font-weight: 700
+			font-size: 40px
+			line-height: 54px
+			color: #FFFFFF
+			position: relative
+			&:before
+				content: 'Skills'
+				position: absolute
+				top: -8px
+				left: -50px
+				font-size: 100px
+				color: rgba(255, 255, 255, 0.03)
+		.skills__desc
+			max-width: 415px
+			width: 100%
+			font-weight: 400
+			font-size: 18px
+			line-height: 30px
+			color: rgba(255, 255, 255, 0.6)
+
+	.skills__container
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		width: 100%
+		gap: calc(var(--size) * 5)
+		.skills__element
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.skills__body
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.body__title
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					text-align: center
+					color: #FFFFFF
+				.body__overview
+					font-weight: 400
+					font-size: 16px
+					line-height: 26px
+					color: rgba(255, 255, 255, 0.6)
+					max-width: 320px
+					width: 100%
