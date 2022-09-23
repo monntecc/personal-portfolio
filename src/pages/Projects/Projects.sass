@@ -1,0 +1,168 @@
+.projects
+  display: flex
+  justify-content: center
+  width: 100%
+  margin-top: 200px
+  margin-bottom: 40px
+
+  .categories
+    display: flex
+    flex-direction: column
+    gap: 12px
+    .category__item.reset-btn
+      span
+        opacity: 1
+        color: rgba(238, 238, 238, 0.89)
+        font-weight: 600
+    .category__item
+      display: flex
+      align-items: center
+      gap: 18px
+      span
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        opacity: 0.6
+        cursor: pointer
+      span[data-selected="true"]
+        opacity: 1
+
+      .circle
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        background-color: rgba(255, 255, 255, 0.5)
+        .circle-out
+          width: 8px
+          height: 8px
+          border-radius: 50%
+          background-color: #FFFFFF
+
+  .projects__information
+    display: flex
+    flex-direction: column
+    gap: 32px
+    .projects__title
+      position: relative
+      font-weight: 700
+      font-size: 38px
+      line-height: 54px
+      color: #FFFFFF
+      &:before
+        content: 'Projects'
+        position: absolute
+        top: -8px
+        left: -70px
+        font-size: 100px
+        color: rgba(255, 255, 255, 0.03)
+    .projects__desc
+      font-weight: 400
+      font-size: 18px
+      line-height: 30px
+      color: rgba(255, 255, 255, 0.6)
+      max-width: 415px
+      width: 100%
+
+  .projects-container
+    display: flex
+    flex-wrap: wrap
+    max-width: 600px
+    gap: 20px
+    .projects-element
+      max-width: 285px
+      background: rgba(255, 255, 255, 0.05)
+      border-radius: 6px
+      padding: 18px
+      text-decoration: none
+      transition: 0.3s background-color ease-in-out
+      display: none
+    .projects-element[data-selected="true"]
+      display: block
+      &:hover
+        background-color: #2BA386
+      .element__info
+        display: flex
+        flex-direction: column
+        padding: 30px 30px 12px 30px
+        text-align: center
+        gap: 16px
+        h2
+          font-weight: 600
+          font-size: 18px
+          line-height: 22px
+          color: #FFFFFF
+        span
+          font-weight: 600
+          font-size: 12px
+          line-height: 15px
+          color: rgba(255, 255, 255, 0.6)
+          text-transform: uppercase
+
+@keyframes project-skeleton
+  100%
+    background: #32353d
+  50%
+    background: #494b52
+    0%
+      background: #32353d
+
+.projects-element.skeleton[data-selected="false"]
+  display: none
+
+.projects-element.skeleton[data-selected="true"]
+  .element__info
+    display: flex!important
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .image
+    width: 249px
+    height: 163px
+    border-radius: 10px
+    animation: project-skeleton 4s linear infinite
+    opacity: 0.4
+  h2
+    width: 189px
+    height: 22px
+    animation: project-skeleton 4s linear infinite
+    border-radius: 10px
+  span
+    width: 160px
+    height: 15px
+    animation: project-skeleton 4s linear infinite
+    border-radius: 10px
+
+
+@media screen and (max-width: 1200px)
+  .projects
+    padding: 0px 40px
+
+@media screen and (max-width: 960px)
+  .projects
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .projects__information
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 40px
+      .projects__desc
+        display: none
+    .projects-container
+      display: flex
+      justify-content: center
+      align-items: center
+  .projects-element.skeleton[data-selected="true"]
+    display: none!important
+
+@media screen and (max-width: 480px)
+  .projects__information
+    .projects__title
+      &:before
+        left: -20px!important
+        font-size: 70px!important

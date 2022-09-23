@@ -8,6 +8,18 @@
   padding: 0
   box-sizing: border-box
 
+::-webkit-scrollbar
+  width: 6px
+
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background: #2ba386
+
+::-webkit-scrollbar-thumb:hover
+  background: #afeedf
+
 body
   font-family: 'Inter', sans-serif
   background-color: #1e1f2a
@@ -24,22 +36,3 @@ body
   align-items: center
   min-height: 100vh
   height: 100%
-
-#copyright
-  position: absolute
-  right: 14px
-  bottom: 14px
-  color: #ffffff
-  display: flex
-  justify-content: center
-  align-items: center
-  gap: 4px
-  padding: 6px 8px
-  border-radius: 6px
-  div:first-child
-    margin-top: 4px
-  div
-    a
-      text-decoration: none
-      font-weight: 700
-      color: #ffffff

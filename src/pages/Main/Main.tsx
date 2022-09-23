@@ -3,7 +3,7 @@ import LoginImage from "../../assets/img/login.png";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 
 import "./Main.sass";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Main = () => {
   return (
@@ -17,7 +17,7 @@ export const Main = () => {
           I am a full-stack programmer, gamer, member of Enqluence Studios, and
           student at TEB Edukacja
         </div>
-        <Link to='/overview' className="hero__link">
+        <Link to="/overview" className="hero__link">
           <span>Go To Overview</span>
           <div className="icon">
             <ArrowForward />
@@ -35,15 +35,9 @@ export const Main = () => {
           <div className="introduction__block nationality">
             <h2>NATIONALITY</h2>
             <span>
-                <div>
-                    UKR
-                </div>
+              <div>UKR</div>
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="14"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="14">
                   <rect width="18" height="7" fill="#005BBB" />
                   <rect width="18" height="7" y="7" fill="#FFD500" />
                 </svg>
@@ -53,7 +47,7 @@ export const Main = () => {
         </div>
       </div>
       <div className="hero__image">
-        <img src={LoginImage} alt="login" draggable={false}/>
+        <img src={LoginImage} alt="login" draggable={false} />
       </div>
     </main>
   );

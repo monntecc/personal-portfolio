@@ -1,0 +1,138 @@
+.contact
+  display: flex
+  justify-content: center
+  margin-top: 80px
+  gap: 100px
+  .contact__information
+    display: flex
+    flex-direction: column
+    gap: 48px
+    .contact__title
+      font-weight: 700
+      font-size: 40px
+      line-height: 54px
+      color: #FFFFFF
+      position: relative
+      &:before
+        content: 'Contact'
+        position: absolute
+        top: -8px
+        left: -90px
+        font-size: 90px
+        color: rgba(255, 255, 255, 0.03)
+    .contact__desc
+      font-weight: 400
+      font-size: 18px
+      line-height: 30px
+      color: rgba(255, 255, 255, 0.6)
+      max-width: 415px
+  .contact-container
+    display: flex
+    flex-direction: column
+    gap: 30px
+    .contact__item
+      display: flex
+      gap: 28px
+      .icon
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        padding: 20px
+        gap: 10px
+        background: rgba(255, 255, 255, 0.05)
+        border-radius: 3px
+        color: #FFFFFF
+      .information
+        display: flex
+        flex-direction: column
+        gap: 8px
+        .header
+          font-weight: 500
+          font-size: 16px
+          line-height: 19px
+          color: rgba(255, 255, 255, 0.6)
+        .content, .content a
+          font-weight: 700
+          font-size: 20px
+          line-height: 24px
+          color: #FFFFFF
+          text-decoration: none
+
+  .contact__preview
+    display: flex
+    flex-direction: column
+    position: relative
+    img.line-bg
+      position: relative
+      width: 100%
+    .relative
+      display: flex
+      flex-direction: column
+      position: absolute
+      gap: 28px
+      top: 100px
+      left: 100px
+      .preview__content
+        background: rgba(255, 255, 255, 0.05)
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        border-radius: 6px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0px 20px
+        width: 259px
+        height: 121px
+        left: 851px
+        top: 269px
+        span
+          font-weight: 400
+          font-size: 16px
+          line-height: 26px
+          color: #FFFFFF
+      .preview__image
+        display: flex
+        width: 100%
+        justify-content: end
+        margin-left: 40px
+        img
+          background: rgba(255, 255, 255, 0.09)
+          padding: 10px
+          border-radius: 50%
+          position: relative
+        span
+          width: 100px
+          height: 100px
+          bottom: -10px
+          right: -50px
+          position: absolute
+          background: rgba(255, 255, 255, 0.05)
+          padding: 20px
+          border-radius: 50%
+
+@media screen and (max-width: 1080px)
+  .contact
+    display: flex
+    flex-direction: column
+    margin-top: 200px
+    justify-content: center
+    align-items: center
+
+@media screen and (max-width: 480px)
+  .contact
+    padding: 0px 30px
+    gap: 18px
+
+    .contact__title
+      &:before
+        left: -30px!important
+        font-size: 60px!important
+
+  .relative
+    left: 20px!important
+
+@media screen and (max-width: 400px)
+  .relative
+    left: 0px!important
+
+  .information .content, .information .content a
+    font-size: 15px!important
