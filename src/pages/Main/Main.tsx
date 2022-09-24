@@ -14,7 +14,7 @@ export const Main = () => {
           <span>Vladyslav Potapenko!</span>
         </div>
         <div className="hero__overview">
-          I am a full-stack programmer, gamer, member of Enqluence Studios, and
+          I am a front-end developer, gamer, football and basketball enthusiast, and
           student at TEB Edukacja
         </div>
         <Link to="/overview" className="hero__link">

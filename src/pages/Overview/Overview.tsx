@@ -13,7 +13,7 @@ export const Overview = () => {
           </div>
           <div className="overview__desc">
             <span>
-              My name is Vladislav Potapenko, I am a full stack programmer. I
+              My name is Vladislav Potapenko, I am a front-end developer. I
               have leadership skills and am committed to using strong
               developmental skills with an emphasis on collaboration,
               communication and passion.
@@ -47,18 +47,6 @@ export const Overview = () => {
                 <div className="circle-out"></div>
               </div>
               <span>Front-end Developer at IDO Electronics</span>
-            </div>
-            <div className="work__element">
-              <div className="circle">
-                <div className="circle-out"></div>
-              </div>
-              <span>Full-stack Developer at IDO Electronics</span>
-            </div>
-            <div className="work__element">
-              <div className="circle">
-                <div className="circle-out"></div>
-              </div>
-              <span>Java Developer at Enqluence Studios</span>
             </div>
           </div>
         </div>
