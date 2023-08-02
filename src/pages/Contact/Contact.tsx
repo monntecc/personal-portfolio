@@ -4,7 +4,7 @@ import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 import LineBgImage from '../../assets/img/line-bg.png';
-import SmallImage from '../../assets/img/small-image.png';
+import SmallImage from '../../assets/img/overview.jpg';
 
 import "./Contact.sass";
 
@@ -35,8 +35,8 @@ export const Contact = () => {
               <div className="information">
                 <div className="header">Email</div>
                 <div className="content">
-                  <a href="mailto:contact@nylestroke.me">
-                    contact@nylestroke.me
+                  <a href="mailto:vladyslav@potapenko.tech">
+                    vladyslav@potapenko.tech
                   </a>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export const Contact = () => {
               <span>"I would love to get a message from you, thx for watching my website"</span>
             </div>
             <div className="preview__image">
-              <img src={SmallImage} alt="small-image" />
+              <img src={SmallImage} alt="small-image" height={80} />
               <span></span>
             </div>
           </div>

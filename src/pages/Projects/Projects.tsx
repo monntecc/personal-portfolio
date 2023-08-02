@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-import ProjectImage from "../../assets/img/project.png";
-import Project2Image from "../../assets/img/project2.png";
-import Project3Image from "../../assets/img/project3.png";
-import Project4Image from "../../assets/img/project4.png";
-import Project5Image from "../../assets/img/project5.png";
-import Project6Image from "../../assets/img/project6.png";
+import Blank from "../../assets/img/blank.jpg";
 
 import "./Projects.sass";
 
@@ -13,11 +8,11 @@ export const Projects = () => {
   const [category, setCategory] = useState<number>(0);
 
   const selectCategory = async (categoryId: number) => {
-    const ui: number = 1;
+    const software: number = 1;
     const web: number = 2;
     const backend: number = 3;
 
-    if (categoryId === ui) await setCategory(ui);
+    if (categoryId === software) await setCategory(software);
     if (categoryId === web) await setCategory(web);
     if (categoryId === backend) await setCategory(backend);
   };
@@ -41,7 +36,7 @@ export const Projects = () => {
                 onClick={() => selectCategory(1)}
                 data-selected={category === 1}
               >
-                UI Design
+                Software
               </span>
             </div>
             <div className="category__item">
@@ -73,15 +68,87 @@ export const Projects = () => {
         </div>
         <div className="projects-container">
           <a
-            href="https://github.com/nylestroke/mat-sample-login-page"
+            href="https://github.com/nylestroke/mandel-to-image"
             target="_blank"
             className="projects-element"
             data-selected={category === 1 || category === 0}
           >
-            <img src={ProjectImage} alt="project" />
+            <img src={Blank} alt="project" />
             <div className="element__info">
-              <h2>MUI Login Page UI</h2>
-              <span>UI Design</span>
+              <h2>Mendel to Image</h2>
+              <span>Software</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/quick-replace"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 1 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>Regex Quick Replace</h2>
+              <span>Software</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/sql_convert"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 1 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>SQL Convert</h2>
+              <span>Software</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/rest-vladiola"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 3 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>Vladiola REST API</h2>
+              <span>Backend Development</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/web-vladiola"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 2 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>Vladiola Website</h2>
+              <span>Web Development</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/nylemod-example"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 1 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>Nylemod (Fabric)</h2>
+              <span>Software</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nylestroke/auth-provider"
+            target="_blank"
+            className="projects-element"
+            data-selected={category === 3 || category === 0}
+          >
+            <img src={Blank} alt="project" />
+            <div className="element__info">
+              <h2>Auth Provider</h2>
+              <span>Backend Development</span>
             </div>
           </a>
           <a
@@ -90,58 +157,22 @@ export const Projects = () => {
             className="projects-element"
             data-selected={category === 2 || category === 0}
           >
-            <img src={Project2Image} alt="project" />
+            <img src={Blank} alt="project" />
             <div className="element__info">
-              <h2>Sontac Movies App</h2>
+              <h2>Sontac Movie</h2>
               <span>Web Development</span>
             </div>
           </a>
           <a
-            href="https://github.com/nylestroke/shopping-list-php"
+            href="https://github.com/nylestroke/studios.enqluence.com"
             target="_blank"
             className="projects-element"
             data-selected={category === 2 || category === 0}
           >
-            <img src={Project5Image} alt="project" />
+            <img src={Blank} alt="project" />
             <div className="element__info">
-              <h2>Shopping List UI</h2>
+              <h2>Enqluence Studios Website</h2>
               <span>Web Development</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/nylestroke/rayabot"
-            target="_blank"
-            className="projects-element"
-            data-selected={category === 3 || category === 0}
-          >
-            <img src={Project3Image} alt="project" />
-            <div className="element__info">
-              <h2>Raya Discord Bot</h2>
-              <span>Backend Development</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/nylestroke/enqluence-backend-alpha"
-            target="_blank"
-            className="projects-element"
-            data-selected={category === 3 || category === 0}
-          >
-            <img src={Project6Image} alt="project" />
-            <div className="element__info">
-              <h2>Express Backend</h2>
-              <span>Backend Development</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/nylestroke/enqluence-forum-alpha"
-            target="_blank"
-            className="projects-element"
-            data-selected={category === 1 || category === 0}
-          >
-            <img src={Project4Image} alt="project" />
-            <div className="element__info">
-              <h2>React Example Forum</h2>
-              <span>UI Design</span>
             </div>
           </a>
           <div

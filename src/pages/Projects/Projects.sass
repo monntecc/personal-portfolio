@@ -80,6 +80,10 @@
       text-decoration: none
       transition: 0.3s background-color ease-in-out
       display: none
+      img
+        width: 249px
+        height: 163px
+        border-radius: 10px
     .projects-element[data-selected="true"]
       display: block
       &:hover
@@ -107,8 +111,8 @@
     background: #32353d
   50%
     background: #494b52
-    0%
-      background: #32353d
+  0%
+    background: #32353d
 
 .projects-element.skeleton[data-selected="false"]
   display: none
@@ -135,7 +139,6 @@
     height: 15px
     animation: project-skeleton 4s linear infinite
     border-radius: 10px
-
 
 @media screen and (max-width: 1200px)
   .projects

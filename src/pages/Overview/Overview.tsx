@@ -1,5 +1,5 @@
 import React from "react";
-import OverviewImage from "../../assets/img/overview.png";
+import OverviewImage from "../../assets/img/overview.jpg";
 
 import "./Overview.sass";
 
@@ -13,8 +13,9 @@ export const Overview = () => {
           </div>
           <div className="overview__desc">
             <span>
-              My name is Vladislav Potapenko, I am a front-end developer. I
-              have leadership skills and am committed to using strong
+              My name is Vladyslav Potapenko, I am a full-stack software developer from Ukraine.
+               Currently I am living in Gdansk, Poland. I am a hard-working, responsible and
+               I have leadership skills and am committed to using strong
               developmental skills with an emphasis on collaboration,
               communication and passion.
             </span>
@@ -46,12 +47,12 @@ export const Overview = () => {
               <div className="circle">
                 <div className="circle-out"></div>
               </div>
-              <span>Front-end Developer at IDO Electronics</span>
+              <span>August 2022 - NOW <br /> Full-stack Software Engineer at NSG 4L</span>
             </div>
           </div>
         </div>
         <div className="overview__image">
-          <img src={OverviewImage} alt="overview" />
+          <img src={OverviewImage} alt="overview" height={440} />
         </div>
       </section>
     </div>

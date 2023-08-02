@@ -7,6 +7,7 @@ main
   background-size: cover
 
   .hero
+    z-index: 1
     margin-top: 80px
     padding-left: 80px
     display: flex
@@ -38,6 +39,8 @@ main
       width: 180px
       text-decoration: none
       transition: color 0.2s ease-in-out
+      span
+        cursor: pointer
       &:hover
         color: #CDFFF3
       .icon
@@ -72,9 +75,9 @@ main
           line-height: 29px
           color: #FFFFFF
       .introduction__block.nationality
-          span
-            display: flex
-            gap: 8px
+        span
+          display: flex
+          gap: 8px
   .hero__image
     display: flex
     margin-top: 120px

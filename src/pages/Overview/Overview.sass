@@ -3,7 +3,8 @@
   justify-content: center
   align-items: center
   gap: calc(var(--size) * 32)
-  margin-top: 100px
+  margin-top: 160px
+  margin-bottom: 34px
 
 .overview
   display: flex
@@ -32,41 +33,42 @@
     color: rgba(255, 255, 255, 0.6)
 
   .overview__work, .overview__education
+    display: flex
+    flex-direction: column
+    gap: 16px
+    h2
+      font-weight: 700
+      font-size: 28px
+      line-height: 34px
+      color: #FFFFFF
+    .work__element, .education__element
       display: flex
-      flex-direction: column
+      align-items: center
       gap: 16px
-      h2
-        font-weight: 700
-        font-size: 28px
-        line-height: 34px
-        color: #FFFFFF
-      .work__element, .education__element
+      .circle
         display: flex
+        justify-content: center
         align-items: center
-        gap: 16px
-        .circle
-          display: flex
-          justify-content: center
-          align-items: center
-          width: 16px
-          height: 16px
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        background-color: rgba(255, 255, 255, 0.5)
+        .circle-out
+          width: 8px
+          height: 8px
           border-radius: 50%
-          background-color: rgba(255, 255, 255, 0.5)
-          .circle-out
-            width: 8px
-            height: 8px
-            border-radius: 50%
-            background-color: #FFFFFF
-        span
-          font-weight: 400
-          font-size: 18px
-          line-height: 22px
-          color: #FFFFFF
+          background-color: #FFFFFF
+      span
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
 
 .overview__image
   margin-bottom: 100px
   img
     width: 100%
+    border-radius: 14px
 
 @media screen and (max-width: 780px)
   .overview__image
