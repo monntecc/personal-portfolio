@@ -1,11 +1,12 @@
 import React from "react";
-import { Routes, Route, Redirect } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Main } from "./pages/Main/Main";
 import { Header } from "./components/Header/Header";
 import { Overview } from "./pages/Overview/Overview";
 import { Skills } from "./pages/Skills/Skills";
 import { Projects } from "./pages/Projects/Projects";
 import { Contact } from "./pages/Contact/Contact";
+import { ExternalLinkedin } from "./pages/ExternalLinkedin/ExternalLinkedin";
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/linkedin" element={<Redirect to="https://www.linkedin.com/in/vladyslav-potapenko-554930261/" />}></Route>
+          <Route path="/linkedin" element={<ExternalLinkedin />}></Route>
         </Routes>
       </div>
     </>
