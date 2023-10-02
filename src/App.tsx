@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Redirect } from "react-router-dom";
 import { Main } from "./pages/Main/Main";
 import { Header } from "./components/Header/Header";
 import { Overview } from "./pages/Overview/Overview";
@@ -18,6 +18,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/linkedin" element={<Redirect to="https://www.linkedin.com/in/vladyslav-potapenko-554930261/" />}></Route>
         </Routes>
       </div>
     </>
